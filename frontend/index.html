@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevPortifolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>DevPortifolio</h1>
+        <p>Meus Projetos de Desenvolvimento</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Cadastrar novo projeto</h2>
+
+            <form id="form-projeto">
+                <label for="nome">Nome do projeto</label>
+                <input 
+                    type="text"
+                    id="nome"
+                    name="nome"
+                    placeholder="Ex.: Meu primeiro projeto"
+                    required>
+
+                <label for="Descricao">Descrição</label>
+                <textarea
+                    id="descricao"
+                    name="descricao"
+                    placeholder="Descreva seu projeto"
+                    required
+                ></textarea>
+
+                <label for="tecnologias">Tecnologias</label>
+                <input
+                    type="text"
+                    id="tecnologias"
+                    name="tecologias"
+                    placeholder="Ex.: Node.js, PostgreSQL, JavaScript"
+                    required
+                >
+                <button type="submit">cadastrar projeto</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Meus Projetos</h2>
+            <div id="lista-projetos">
+                <p>Carregando projetos...</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
